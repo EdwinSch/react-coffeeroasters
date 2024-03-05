@@ -1,0 +1,80 @@
+/* Import components */
+@import url(./component-styles.css);
+
+/* Init */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Variables */
+:root {
+  --font-headings: "Fraunces", serif;
+  --font-body: "Barlow", sans-serif;
+  --clr-cream: #fefcf7;
+  --clr-darkCyan: #0e8784;
+  --clr-darkBlue: #333d4b;
+  --clr-paleOrange: #fdd6ba;
+  --clr-grey: #83888f;
+  --transition: 250ms ease;
+  --inspect: solid red 1px;
+}
+
+/* --- MAIN CSS --- */
+
+body {
+  border: var(--inspect);
+  background-color: var(--clr-cream);
+  min-height: 100vh;
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.body-txt {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.btn {
+  min-width: 217px;
+  height: 56px;
+  background-color: var(--clr-darkCyan);
+  color: var(--clr-cream);
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-headings);
+  font-size: 18px;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    background-color: #66d2cf;
+  }
+}
+
+.btn-disabled {
+  background-color: #e2dedb;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+
+@media screen and (max-width: 450px) {
+  /* some class */
+}
