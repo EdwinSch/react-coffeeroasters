@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  gap: 35px;
+
+  .nav-link {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--clr-grey);
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    transition: var(--transition);
+  }
+
+  .dark:hover {
+    color: var(--clr-darkBlue);
+  }
+
+  .light:hover {
+    color: white;
+  }
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
