@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <img src={lightlogo} alt="logo" className="logo-img" />
 
-      <Navigation variant={"light"} aria-label="footer navigation" />
+      <Navigation variant={"light"} label="footer navigation" />
 
       {/* Social Media Links */}
       <div className="socials-wrapper">

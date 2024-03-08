@@ -7,7 +7,7 @@ const Header = ({ navIsOpen, setNavIsOpen }) => {
     <header>
       <img src={darklogo} alt="logo" className="logo-img" />
       <div className="nav-wrapper">
-        <Navigation variant={"dark"} aria-label="footer navigation" />
+        <Navigation variant={"dark"} label="header navigation" />
       </div>
       <button
         className="mobile-nav-btn"

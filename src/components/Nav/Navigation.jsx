@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Navigation = ({ variant }) => {
+const Navigation = ({ variant, label }) => {
   return (
-    <nav>
+    <nav aria-label={label}>
       <Link to={"/"} className={`nav-link ${variant}`}>
         home
       </Link>
