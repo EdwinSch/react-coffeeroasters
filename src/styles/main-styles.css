@@ -73,14 +73,17 @@ body {
 }
 
 .btn {
-  min-width: 217px;
+  width: 217px;
   height: 56px;
+  display: grid;
+  place-items: center;
   background-color: var(--clr-darkCyan);
   color: var(--clr-cream);
   border: none;
   border-radius: 6px;
   font-family: var(--font-headings);
   font-size: 18px;
+  font-weight: 800;
   cursor: pointer;
   transition: var(--transition);
 

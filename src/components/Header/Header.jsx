@@ -5,9 +5,9 @@ import { IoMenu, IoClose } from "react-icons/io5";
 const Header = ({ navIsOpen, setNavIsOpen }) => {
   return (
     <header>
-      <img src={darklogo} alt="" className="logo-img" />
+      <img src={darklogo} alt="logo" className="logo-img" />
       <div className="nav-wrapper">
-        <Navigation variant={"dark"} />
+        <Navigation variant={"dark"} aria-label="footer navigation" />
       </div>
       <button
         className="mobile-nav-btn"

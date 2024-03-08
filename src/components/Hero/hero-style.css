@@ -1,0 +1,95 @@
+.hero {
+  border-radius: 15px;
+
+  .hero-content {
+    margin-left: 85px;
+    height: 100%;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    .heading-lg {
+      font-family: var(--font-headings);
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 72px;
+      color: var(--clr-cream);
+    }
+
+    .heading-sm {
+      font-family: var(--font-headings);
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 48px;
+      color: var(--clr-cream);
+    }
+
+    .hero-txt {
+      color: var(--clr-cream);
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      padding: 0 25px;
+      width: auto;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 550px) {
+      .heading-lg {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      .heading-sm {
+        font-size: 28px;
+        line-height: 28px;
+      }
+
+      .hero-txt {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+.hero-lg {
+  height: 600px;
+  background-image: url(../../assets/home/desktop/image-hero-coffeepress.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 550px) {
+    height: 500px;
+    background-image: url(../../assets/home/mobile/image-hero-coffeepress.jpg);
+  }
+}
+
+.hero-about {
+  height: 400px;
+  background-image: url(../../assets/about/desktop/image-hero-whitecup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 550px) {
+    background-image: url(../../assets/about/mobile/image-hero-whitecup.jpg);
+    background-position: right;
+  }
+}
+
+.hero-plan {
+  height: 400px;
+  background-image: url(../../assets/plan/desktop/image-hero-blackcup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 550px) {
+    background-image: url(../../assets/plan/mobile/image-hero-blackcup.jpg);
+  }
+}
