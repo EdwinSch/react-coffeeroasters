@@ -4,4 +4,33 @@ header {
   justify-content: space-between;
   align-items: center;
   background: transparent;
+
+  .mobile-nav-btn {
+    display: none;
+    place-items: center;
+    font-size: 40px;
+    color: var(--clr-darkBlue);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  @media screen and (max-width: 650px) {
+    .nav-wrapper {
+      display: none;
+    }
+
+    .mobile-nav-btn {
+      display: grid;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 80px;
+
+    .mobile-nav-btn {
+      font-size: 32px;
+    }
+  }
 }
