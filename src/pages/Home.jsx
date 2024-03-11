@@ -1,6 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import Collection from "../components/Collection/Collection";
 import Usp from "../components/Usp/Usp";
+import Instructions from "../components/Instructions/Instructions";
 
 import { Link } from "react-router-dom";
 
@@ -27,6 +28,9 @@ const Home = () => {
 
       {/* Why choose us? */}
       <Usp />
+
+      {/* Instructions */}
+      <Instructions />
     </main>
   );
 };
