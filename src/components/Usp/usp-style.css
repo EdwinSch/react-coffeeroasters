@@ -4,7 +4,7 @@
   background-color: var(--clr-darkBlue);
   text-align: center;
   padding-top: 100px;
-  margin-bottom: 350px;
+  margin-bottom: 300px;
   border-radius: 15px;
 
   & h2 {
@@ -81,7 +81,7 @@
   @media screen and (max-width: 768px) {
     height: 900px;
     padding: 50px 20px 0 20px;
-    margin-bottom: 350px;
+    margin-bottom: 250px;
 
     & h2 {
       margin-bottom: 20px;
@@ -98,9 +98,13 @@
 
       .item-wrapper {
         width: 90%;
-        padding: 30px;
+        padding: 25px;
         gap: 15px;
       }
     }
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 350px;
   }
 }
