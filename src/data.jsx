@@ -8,6 +8,10 @@ import dancheImg from "./assets/home/desktop/image-danche.png";
 // USP icons
 import { BiSolidCoffeeBean, BiSolidGift } from "react-icons/bi";
 import { MdLocalShipping } from "react-icons/md";
+// Country imgs
+import ukImg from "./assets/about/desktop/illustration-uk.svg";
+import CanadaImg from "./assets/about/desktop/illustration-canada.svg";
+import AustraliaImg from "./assets/about/desktop/illustration-australia.svg";
 
 export const collection = [
   {
@@ -55,5 +59,29 @@ export const usps = [
     icon: <MdLocalShipping />,
     title: "Free shipping",
     text: "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
+  },
+];
+
+export const countries = [
+  {
+    icon: ukImg,
+    country: "United Kingdom",
+    street: "68 Asfordby Rd",
+    city: "Alcaston",
+    phone: "+44 1241 918425",
+  },
+  {
+    icon: CanadaImg,
+    country: "Canada",
+    street: "1528 Eglinton Avenue",
+    city: "Toronto",
+    phone: "+1 416 485 29975",
+  },
+  {
+    icon: AustraliaImg,
+    country: "Australia",
+    street: "36 Swanston Street",
+    city: "Victoria",
+    phone: "+61 4 9928 3629",
   },
 ];

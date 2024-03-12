@@ -1,5 +1,6 @@
 import Hero from "../components/Hero/Hero";
 import commitImg from "../assets/about/desktop/image-commitment.jpg";
+import Countries from "../components/Countries/Countries";
 
 const About = () => {
   return (
@@ -31,6 +32,9 @@ const About = () => {
           </p>
         </div>
       </div>
+
+      {/* our headquarters */}
+      <Countries />
     </main>
   );
 };
