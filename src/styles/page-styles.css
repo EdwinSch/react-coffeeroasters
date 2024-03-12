@@ -1,0 +1,50 @@
+/* About - Commitment section */
+
+.commitment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 0 80px;
+  margin-bottom: 200px;
+
+  .commit-img {
+    border-radius: 15px;
+    width: 445px;
+    height: 520px;
+    object-fit: cover;
+  }
+
+  .commit-heading {
+    margin-bottom: 30px;
+    font-family: var(--font-headings);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    color: var(--clr-darkBlue);
+  }
+
+  @media screen and (max-width: 1300px) {
+    padding: 0 0;
+    gap: 50px;
+
+    .commit-img {
+      width: 281px;
+      height: 470px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    text-align: center;
+
+    .commit-img {
+      height: 400px;
+      object-position: top;
+
+      @media screen and (max-width: 550px) {
+        width: 100%;
+      }
+    }
+  }
+}
