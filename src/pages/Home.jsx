@@ -30,7 +30,11 @@ const Home = () => {
       <Usp />
 
       {/* Instructions */}
-      <Instructions />
+      <Instructions>
+        <Link to={"/plan"} className="btn btn-position">
+          Create your plan
+        </Link>
+      </Instructions>
     </main>
   );
 };

@@ -98,6 +98,12 @@ body {
 
 /* --- MOBILE RESPONSIVE --- */
 
+@media screen and (max-width: 950px) {
+  .btn-position {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .logo-img {
     width: 163px;

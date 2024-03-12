@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-const Instructions = ({ addDark, lightText }) => {
+const Instructions = ({ addDark, lightText, children }) => {
   return (
     <section
       className="instructions-container"
@@ -15,8 +13,10 @@ const Instructions = ({ addDark, lightText }) => {
             <div className="stripe"></div>
           </div>
           <h3 className="step-number">01</h3>
-          <h4 className="step-title">Pick your coffee</h4>
-          <p className="body-txt step-txt">
+          <h4 className="step-title" style={{ color: lightText }}>
+            Pick your coffee
+          </h4>
+          <p className="body-txt step-txt" style={{ color: lightText }}>
             Select from our evolving range of artisan coffees. Our beans are
             ethically sourced and we pay fair prices for them. There are new
             coffees in all profiles every month for you to try out.
@@ -30,8 +30,10 @@ const Instructions = ({ addDark, lightText }) => {
             <div className="stripe"></div>
           </div>
           <h3 className="step-number">02</h3>
-          <h4 className="step-title">Choose the frequency</h4>
-          <p className="body-txt step-txt">
+          <h4 className="step-title" style={{ color: lightText }}>
+            Choose the frequency
+          </h4>
+          <p className="body-txt step-txt" style={{ color: lightText }}>
             Customize your order frequency, quantity, even your roast style and
             grind type. Pause, skip or cancel your subscription with no
             commitment through our online portal.
@@ -45,8 +47,10 @@ const Instructions = ({ addDark, lightText }) => {
             <div className="stripe"></div>
           </div>
           <h3 className="step-number">03</h3>
-          <h4 className="step-title">Receive and enjoy!</h4>
-          <p className="body-txt step-txt">
+          <h4 className="step-title" style={{ color: lightText }}>
+            Receive and enjoy!
+          </h4>
+          <p className="body-txt step-txt" style={{ color: lightText }}>
             We ship your package within 48 hours, freshly roasted. Sit back and
             enjoy award-winning world-class coffees curated to provide a
             distinct tasting experience.
@@ -54,9 +58,7 @@ const Instructions = ({ addDark, lightText }) => {
         </article>
       </div>
 
-      <Link to={"/plan"} className="btn">
-        Create your plan
-      </Link>
+      {children}
     </section>
   );
 };
