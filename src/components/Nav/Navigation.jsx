@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = ({ variant, label }) => {
   return (
-    <nav aria-label={label}>
+    <nav className="desktop-nav" aria-label={label}>
       <Link to={"/"} className={`nav-link ${variant}`}>
         home
       </Link>

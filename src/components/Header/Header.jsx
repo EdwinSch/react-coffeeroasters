@@ -13,6 +13,7 @@ const Header = ({ navIsOpen, setNavIsOpen }) => {
         className="mobile-nav-btn"
         onClick={() => setNavIsOpen(!navIsOpen)}
         type="button"
+        aria-label="toggle navigation"
       >
         {navIsOpen ? <IoClose /> : <IoMenu />}
       </button>

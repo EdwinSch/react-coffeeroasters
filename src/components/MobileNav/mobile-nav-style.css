@@ -1,0 +1,21 @@
+.mobile-nav {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+
+  .mobile-nav-link {
+    display: block;
+    margin-bottom: 35px;
+    font-family: var(--font-headings);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 800;
+    color: var(--clr-darkBlue);
+    text-transform: capitalize;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--clr-darkCyan);
+    }
+  }
+}
