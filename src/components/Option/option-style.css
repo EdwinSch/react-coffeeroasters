@@ -1,0 +1,61 @@
+/* The container */
+.option-wrapper {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.option-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.inner-content {
+  position: absolute;
+  padding: 35px 25px 0 25px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f1eb;
+  text-align: start;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+/* On mouse-over, add a grey background color */
+.option-wrapper:hover input ~ .inner-content {
+  background-color: var(--clr-paleOrange);
+}
+
+/* When the radio button is checked, add a blue background */
+.option-wrapper input:checked ~ .inner-content {
+  background-color: var(--clr-darkCyan);
+  color: var(--clr-cream);
+
+  .option-heading {
+    color: var(--clr-cream);
+  }
+}
+
+.option-heading {
+  margin-bottom: 25px;
+  font-family: var(--font-headings);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  color: var(--clr-darkBlue);
+  text-transform: capitalize;
+}

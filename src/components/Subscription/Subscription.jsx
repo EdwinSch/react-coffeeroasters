@@ -1,11 +1,12 @@
 import { formData } from "../../data";
 import { useState } from "react";
+import Option from "../Option/Option";
 
 const Subscription = () => {
   const [selections, setSelections] = useState({});
 
   const handleSelectionChange = (setId, value) => {
-    setSelections({ ...selections, [setId]: value });
+    setSelections({ ...selections, [setId]: value.type });
   };
 
   const handleSubmit = (event) => {
@@ -20,23 +21,29 @@ const Subscription = () => {
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
-        {formData.map((set) => (
-          <div key={set.id} className="set-wrapper">
-            <h3 className="set-heading">{set.heading}</h3>
-            {set.options.map((option) => (
-              <label key={option} className="container">
-                <input
-                  type="radio"
-                  checked={selections[set.id] === option}
-                  name="radio"
-                  value={option}
-                  onChange={() => handleSelectionChange(set.id, option)}
-                />
-                <span className="checkmark">{option}</span>
-              </label>
-            ))}
-          </div>
-        ))}
+        {formData.map((set) => {
+          // Sets
+          return (
+            <div key={set.id} className="set-wrapper">
+              <h2 className="set-heading">{set.heading}</h2>
+
+              {/* Radio buttons */}
+              <div className="radio-btns-wrapper">
+                {set.options.map((option, index) => {
+                  return (
+                    <Option
+                      key={index}
+                      value={option}
+                      checked={selections[set.id] === option.type}
+                      onChange={() => handleSelectionChange(set.id, option)}
+                      option={option}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
 
         <input className="btn" type="submit" value="Create my plan" />
       </form>
