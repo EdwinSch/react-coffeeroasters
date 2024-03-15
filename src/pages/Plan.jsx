@@ -1,5 +1,6 @@
 import Hero from "../components/Hero/Hero";
 import Instructions from "../components/Instructions/Instructions";
+import Subscription from "../components/Subscription/Subscription";
 
 const Plan = () => {
   return (
@@ -11,6 +12,7 @@ const Plan = () => {
         headingContent="Create plan"
       />
       <Instructions addDark={"#333d4b"} lightText={"#fefcf7"} />
+      <Subscription />
     </main>
   );
 };

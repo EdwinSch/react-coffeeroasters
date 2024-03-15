@@ -85,3 +85,18 @@ export const countries = [
     phone: "+61 4 9928 3629",
   },
 ];
+
+export const formData = [
+  {
+    id: 1,
+    setName: "Preferences",
+    heading: "How do you drink your coffee?",
+    options: ["capsule", "filter", "espresso"],
+  },
+  {
+    id: 2,
+    setName: "Bean Type",
+    heading: "What type of coffee?",
+    options: ["single origin", "decaf", "blended"],
+  },
+];
