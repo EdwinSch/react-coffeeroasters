@@ -18,20 +18,27 @@ const Subscription = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(selections);
-    console.log("hello");
   };
 
   return (
     <div className="subscription-container">
       {/* Categories */}
-      <p>temp categories container</p>
+      <div className="categories-wrapper">
+        {formData.map((cat) => {
+          return (
+            <a key={cat.id} href={`#${cat.setName}`} className="cat-link">
+              <span>0{cat.id}</span> {cat.setName}
+            </a>
+          );
+        })}
+      </div>
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
         {formData.map((set) => {
           // Sets
           return (
-            <div key={set.id} className="set-wrapper">
+            <div key={set.id} className="set-wrapper" id={set.setName}>
               <h2 className="set-heading">{set.heading}</h2>
 
               {/* Radio buttons */}

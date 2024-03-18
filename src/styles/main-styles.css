@@ -38,6 +38,10 @@ ul {
 
 /* --- MAIN CSS --- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   border: var(--inspect);
   background-color: var(--clr-cream);
