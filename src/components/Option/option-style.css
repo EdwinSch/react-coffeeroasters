@@ -12,6 +12,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  @media screen and (max-width: 950px) {
+    height: fit-content;
+    min-height: 160px;
+  }
 }
 
 /* Hide Browser Default */
@@ -33,6 +38,10 @@
   text-align: start;
   border-radius: 15px;
   transition: 200ms ease;
+
+  @media screen and (max-width: 950px) {
+    padding: 25px;
+  }
 }
 
 /* Hover State */
@@ -59,4 +68,8 @@
   line-height: 32px;
   color: var(--clr-darkBlue);
   text-transform: capitalize;
+
+  @media screen and (max-width: 950px) {
+    margin-bottom: 10px;
+  }
 }

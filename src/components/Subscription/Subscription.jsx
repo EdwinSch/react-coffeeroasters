@@ -21,20 +21,20 @@ const Subscription = () => {
   };
 
   return (
-    <div className="subscription-container">
+    <form onSubmit={handleSubmit} className="form-control">
       {/* Categories */}
       <div className="categories-wrapper">
-        {formData.map((cat) => {
+        {formData.map((set) => {
           return (
-            <a key={cat.id} href={`#${cat.setName}`} className="cat-link">
-              <span>0{cat.id}</span> {cat.setName}
+            <a key={set.id} href={`#${set.setName}`} className="cat-link">
+              <span>0{set.id}</span> {set.setName}
             </a>
           );
         })}
       </div>
 
-      {/* Form */}
-      <form onSubmit={handleSubmit}>
+      {/* Options */}
+      <div className="options-container">
         {formData.map((set) => {
           // Sets
           return (
@@ -69,8 +69,8 @@ const Subscription = () => {
             disabled
           />
         )}
-      </form>
-    </div>
+      </div>
+    </form>
   );
 };
 
