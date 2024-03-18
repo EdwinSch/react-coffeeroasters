@@ -1,6 +1,6 @@
 .form-control {
   /* border: var(--inspect); */
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
@@ -37,6 +37,8 @@
   }
 
   .options-container {
+    /* border: var(--inspect); */
+
     .set-wrapper {
       margin-bottom: 80px;
 

@@ -104,6 +104,7 @@ body {
 
 .btn-disabled {
   background-color: #e2dedb;
+  cursor: auto;
 
   &:hover {
     background-color: #e2dedb;

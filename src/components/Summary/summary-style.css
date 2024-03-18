@@ -1,0 +1,59 @@
+.summary-container {
+  /* border: var(--inspect); */
+  margin-left: auto;
+  margin-top: 100px;
+  background-color: var(--clr-darkBlue);
+  border-radius: 15px;
+  padding: 30px 50px;
+  width: 760px;
+
+  @media screen and (max-width: 950px) {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .summary-heading {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--clr-grey);
+    text-transform: uppercase;
+  }
+
+  .summary-txt {
+    margin: 15px 0;
+    font-family: var(--font-headings);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 40px;
+    color: var(--clr-cream);
+
+    & span {
+      color: var(--clr-darkCyan);
+    }
+  }
+
+  .instruct {
+    color: var(--clr-cream);
+  }
+
+  .checkout-wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+    }
+
+    .price {
+      font-family: var(--font-headings);
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 36px;
+      color: var(--clr-cream);
+    }
+  }
+}
