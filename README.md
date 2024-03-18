@@ -1,6 +1,6 @@
-## Main header (prj title)
+## Coffeeroasters (React)
 
-Project description
+This web app is a (mocked) coffee subscription app. Users can create and order a custom subscription plan with roast types, weight, delivery interval and so on. Showcasing: form handling/validation, dynamic routing/pages, state management, JSON data rendering/mapping, custom inputs and dynamic styling.
 
 ### Live Demo
 
@@ -9,6 +9,11 @@ Project description
 #### 🛠️ Build with
 
 - React
+- CSS
+- Vite
+- React Router DOM
+- React Icons
+- Nano ID
 
 #### 💻 Run this project
 
