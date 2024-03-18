@@ -100,6 +100,10 @@ body {
 
 .btn-disabled {
   background-color: #e2dedb;
+
+  &:hover {
+    background-color: #e2dedb;
+  }
 }
 
 /* --- MOBILE RESPONSIVE --- */

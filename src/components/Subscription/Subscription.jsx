@@ -4,14 +4,21 @@ import Option from "../Option/Option";
 
 const Subscription = () => {
   const [selections, setSelections] = useState({});
+  const [isFormValid, setIsFormValid] = useState(false);
 
+  // OnChange: update selections and validate if all options are checked
   const handleSelectionChange = (setId, value) => {
-    setSelections({ ...selections, [setId]: value.type });
+    const updatedSelections = { ...selections, [setId]: value.type };
+    setSelections(updatedSelections);
+    const isFormValid =
+      Object.keys(updatedSelections).length === formData.length;
+    setIsFormValid(isFormValid);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(selections);
+    console.log("hello");
   };
 
   return (
@@ -45,7 +52,16 @@ const Subscription = () => {
           );
         })}
 
-        <input className="btn" type="submit" value="Create my plan" />
+        {isFormValid ? (
+          <input className="btn" type="submit" value="Create my plan" />
+        ) : (
+          <input
+            className="btn btn-disabled"
+            type="submit"
+            value="Create my plan"
+            disabled
+          />
+        )}
       </form>
     </div>
   );
